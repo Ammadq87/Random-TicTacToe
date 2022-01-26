@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/gamescreen"
+        android:id="@+id/picture" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="70dp">
+
+        <!-- Grid for game -->
+        <GridLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="77dp"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="aClick"
+                android:id="@+id/a" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="bClick"
+                android:id="@+id/b" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="cClick"
+                android:id="@+id/c" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="dClick"
+                android:id="@+id/d" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="eClick"
+                android:id="@+id/e" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="fClick"
+                android:id="@+id/f" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="gClick"
+                android:id="@+id/g" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="hClick"
+                android:id="@+id/h" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/blank"
+                android:padding="5dp"
+                android:onClick="iClick"
+                android:id="@+id/i" />
+
+        </GridLayout>
+
+        <!--Widgets display both players scores and flip button-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1points"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:onClick="Flip_Function"
+                android:id="@+id/flip"
+                android:src="@drawable/coin"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2points"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>
