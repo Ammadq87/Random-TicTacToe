@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp">
+
+    <!--Background for screen-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/gamechoicescreen" />
+
+    <!--Button to choose batman as your character -->
+    <ImageButton
+        android:layout_marginTop="250dp"
+       android:onClick="bat"
+        android:id="@+id/b"
+        android:layout_width="175dp"
+        android:layout_height="158dp"
+        android:src="@drawable/batmanchoice" />
+
+    <!-- Button to choose joker as your character-->
+    <ImageButton
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="174dp"
+        android:onClick="joker"
+        android:id="@+id/j"
+        android:layout_width="175dp"
+        android:layout_height="158dp"
+        android:src="@drawable/jokerchoice" />
+
+    <!--Next button leads to "GameScreen" -->
+    <ImageButton
+        android:layout_width="102dp"
+        android:layout_height="52dp"
+        android:src="@drawable/nextbutton"
+        android:id="@+id/next"
+        android:layout_marginTop="409dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+</RelativeLayout>
